@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sr.gh0stz4 | guns.lol</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fundo com GIF/Vídeo e Camada de Vignette -->
+  <div id="bg-container">
+    <video id="bg-video" loop muted playsinline></video>
+    <div id="bg-image"></div>
+  </div>
+  <div id="bg-overlay"></div>
+  
+  <!-- Canvas para partículas de fundo (neve ou estrelas) -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Tela de entrada (Click to Enter) -->
+  <div id="enter-overlay">
+    <div class="enter-text">[ click to enter ]</div>
+  </div>
+
+  <!-- Botão flutuante para ocultar/mostrar o painel -->
+  <div id="visibility-toggle" class="visibility-toggle" title="Ocultar Painel">
+    <i class="fas fa-eye"></i>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div id="content-wrapper">
+    <div class="profile-card" id="profile-card">
+      
+      <!-- Imagem de Perfil (Avatar) -->
+      <div class="avatar-container">
+        <img id="avatar-img" class="avatar-image" src="" alt="Avatar">
+      </div>
+
+      <!-- Nome do Usuário -->
+      <div class="username-container">
+        <span id="username-text" class="username"></span>
+      </div>
+
+      <!-- Tagline / Subtítulo -->
+      <div id="tagline-text" class="tagline"></div>
+
+      <!-- Container de Badges (Carregadas dinamicamente) -->
+      <div id="badges-container" class="badges-container"></div>
+
+      <!-- Container de Bio / Descrição com digitação -->
+      <div class="bio-container">
+        <span id="bio-text"></span><span class="typed-cursor">|</span>
+      </div>
+
+      <!-- Links Sociais (Carregados dinamicamente) -->
+      <div id="socials-container" class="socials-container"></div>
+
+      <!-- Player de Música Customizado -->
+      <div class="audio-player">
+        <div class="player-controls">
+          <button id="play-pause-btn" class="btn-play-pause">
+            <i class="fas fa-play"></i>
+          </button>
+          <div class="track-info">
+            <div id="track-title" class="track-name">Carregando faixa...</div>
+            <div id="track-artist" class="track-artist">Carregando artista...</div>
+          </div>
+        </div>
+        <div class="volume-container">
+          <i id="volume-icon" class="fas fa-volume-up volume-icon"></i>
+          <input id="volume-slider" class="volume-slider" type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+
+      <!-- Rodapé / Visualizações e UID -->
+      <div class="footer-container">
+        <span id="uid-text">uid: #-----</span>
+        <span class="view-counter">
+          <i class="far fa-eye"></i>
+          <span id="views-count">0</span> views
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Carregar arquivos de scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
