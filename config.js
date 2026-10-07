@@ -9,7 +9,7 @@ const CONFIG = {
     role: "Desenvolvedor FiveM · Lua",
     status: "Disponível para novos projetos",
     summary: "Desenvolvo recursos e sistemas para servidores de roleplay, com foco em qualidade, desempenho e uma experiência consistente para os jogadores.",
-    avatarUrl: "https://i.pinimg.com/736x/b1/bb/c3/b1bbc3836dbec66c5a315bce061d108f.jpg",
+    avatarUrl: "https://i.pinimg.com/736x/d7/b0/05/d7b005a8d6e39f18f86a24b439923d86.jpg",
     discordUserId: "1287024599925526539"
   },
 
