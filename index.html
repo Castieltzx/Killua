@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d16">
+  <meta name="description" content="Desenvolvimento de recursos e sistemas para FiveM.">
+  <title>Killua | Desenvolvedor FiveM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <div class="background" aria-hidden="true">
+    <canvas id="code-background"></canvas>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Killua, início">
+      <span class="brand-mark">K</span>
+      <span id="brand-name">Killua<span class="brand-period">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="header-contact" id="header-discord-link" href="#" target="_blank" rel="noopener noreferrer">Vamos conversar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="status-dot"></span><span id="profile-status">Disponível para novos projetos</span></p>
+        <p class="overline">DESENVOLVIMENTO FIVEM</p>
+        <h1>Olá, eu sou <span id="hero-name">Killua</span>.<br>Construo experiências<br><span class="heading-accent">para FiveM.</span></h1>
+        <p class="hero-summary" id="profile-summary">Desenvolvo recursos e sistemas para servidores de roleplay, com foco em qualidade, desempenho e uma experiência consistente para os jogadores.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" id="hero-discord-link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord" aria-hidden="true"></i> Conversar sobre um projeto <i class="fa-solid fa-arrow-up-right-from-square button-arrow" aria-hidden="true"></i></a>
+          <a class="text-link" href="#atuacao">Conheça minha atuação <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Brasil</span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span><i class="fa-solid fa-code" aria-hidden="true"></i> Lua &amp; FiveM</span>
+        </div>
+      </div>
+
+      <aside class="profile-panel" aria-label="Perfil profissional" data-reveal>
+        <div class="profile-panel-top">
+          <span class="panel-label">PERFIL</span>
+          <span class="panel-index">FIVEM · LUA</span>
+        </div>
+        <img id="avatar-img" class="avatar" src="" alt="Foto de perfil de Killua">
+        <p class="profile-name" id="panel-name">Killua</p>
+        <p class="profile-role" id="profile-tagline">Desenvolvedor FiveM · Lua</p>
+        <div class="panel-rule"></div>
+        <p class="panel-caption">ÁREAS DE INTERESSE</p>
+        <div id="expertise-list" class="expertise-list"></div>
+        <div class="profile-panel-bottom">
+          <span class="availability-indicator"><span class="status-dot"></span> Aberto a oportunidades</span>
+          <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        </div>
+      </aside>
+      <span class="hero-decoration" aria-hidden="true">FIVEM / LUA</span>
+    </section>
+
+    <section class="content-section section-shell" id="sobre">
+      <div class="section-heading" data-reveal>
+        <p class="overline">01 — SOBRE</p>
+        <h2>Tecnologia a serviço<br>de boas experiências.</h2>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p>Meu foco é criar e aprimorar sistemas para FiveM, transformando necessidades de uma comunidade em recursos claros, confiáveis e agradáveis de usar.</p>
+        <p>Valorizo código organizado, comunicação transparente e atenção aos detalhes em cada etapa — da ideia à manutenção.</p>
+      </div>
+    </section>
+
+    <section class="content-section section-shell work-section" id="atuacao">
+      <div class="section-heading" data-reveal>
+        <p class="overline">02 — ATUAÇÃO</p>
+        <h2>Como posso contribuir.</h2>
+      </div>
+      <div class="service-grid" id="services-list" data-reveal></div>
+    </section>
+
+    <section class="contact-section section-shell" id="contato">
+      <div data-reveal>
+        <p class="overline">03 — CONTATO</p>
+        <h2>Tem um projeto<br>em mente?</h2>
+        <p class="contact-copy">Vamos conversar sobre o que você precisa desenvolver para o seu servidor.</p>
+      </div>
+      <div class="contact-links" data-reveal>
+        <div id="socials-container" class="socials-container"></div>
+        <button class="copy-id-button" id="copy-discord-id" type="button">
+          <i class="fa-regular fa-copy" aria-hidden="true"></i>
+          <span>Copiar ID do Discord</span>
+        </button>
+        <p class="contact-note"><i class="fa-regular fa-clock" aria-hidden="true"></i> Responderei assim que possível.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">K</span><span id="footer-name">Killua<span class="brand-period">.</span></span></a>
+    <p>Desenvolvimento FiveM com propósito.</p>
+    <span>© <span id="current-year"></span> Killua</span>
+  </footer>
+  <p class="interaction-status" id="interaction-status" role="status" aria-live="polite"></p>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
